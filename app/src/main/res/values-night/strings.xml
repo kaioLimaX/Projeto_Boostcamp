@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Projeto_Boostcamp</string>
     <string name="scroll_view">Nesta tela, é possível rolar para ver o conteúdo </string>
@@ -10,19 +11,14 @@
     <string name="logo_china_in_box">Logo do China in Box</string>
     <string name="desconto_yakisoba">R$ 39,90</string>
     <string name="valor_original_yakisoba">R$ 47,80</string>
-    <string name="nome_china_in_box">China in Box</string>
-    <string name="restaurante">Restaurante</string>
-    <string name="destaques">Destaques</string>
     <string name="destaque_1">Destaque 1</string>
     <string name="desconto_progressivo_escolha_3_pratos_com_30_de_desconto">Desconto progressivo, escolha 3 pratos com 30% de desconto</string>
-    <string name="escolha_3_pratos">Escolha 3 pratos com 30% de desconto</string>
     <string name="valor_desconto_do_3_pratos">R$ 74,90</string>
     <string name="valor_original_do_3_pratos">R$ 107,70</string>
     <string name="frango_crispy">Frango Crispy Grande + Frango Empanado Grande + Frango a Passarinho Grande</string>
     <string name="descricao_frango_cripsy">Pedaços de coxa e sobrecoxa de frango com uma.....</string>
     <string name="serve_4_pessoas">Serve 4 pessoas</string>
     <string name="desconto_frango_crispy">R$ 157,40</string>
-    <string name="preco_original_frango_crispy">R$ 202,70</string>
     <string name="macarr_o_oriental_iscas_de_frango_coca_cola">Macarrão Oriental Iscas de frango + Coca-Cola</string>
     <string name="macarr_o_com_molho_base_de_shoyu_cobertos_com_iscas_de_frango_levemente_apimentadas_by_seara_e_cebolinha_picada_al_rgicos_nosso_molho_cont_m_crust_ceo_peixe_soja_e_derivados_pode_conter_trigo_ovos_e_leite_coca_cola_lata_normal_ou_zero_a_car">Macarrão com molho à base de shoyu cobertos com iscas de frango levemente apimentadas by Seara e cebolinha picada. Alérgicos nosso molho contém crustáceo, peixe, soja e derivados. Pode conter trigo, ovos e leite. + Coca-Cola lata (normal ou zero açúcar)</string>
     <string name="serve_1_pessoa">Serve 1 pessoa</string>
