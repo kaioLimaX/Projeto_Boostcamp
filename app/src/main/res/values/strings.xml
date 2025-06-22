@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Projeto_Boostcamp</string>
-    <string name="texto_login">Falta pouco para matar\nsua fome</string>
-    <string name="digite_email">Digite seu e-mail</string>
-    <string name="entrar">Entrar</string>
-    <string name="digite_senha">Digite sua senha</string>
+    <string name="txt_titulo_login">Falta pouco para matar\nsua fome</string>
+    <string name="txt_input_email">Digite seu e-mail</string>
+    <string name="btn_entrar">Entrar</string>
+    <string name="txt_input_senha">Digite sua senha</string>
 </resources>
