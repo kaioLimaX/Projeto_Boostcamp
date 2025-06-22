@@ -1,6 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Projeto_Boostcamp</string>
-    <string name="scroll_view">Nesta tela, é possível rolar para ver o conteúdo </string>
     <string name="image_button">Botão para voltar à tela inicial com os restaurantes.</string>
     <string name="image_view_yakisoba">Imagem do Yakisoba</string>
     <string name="image_capa_china_in_box">Capa do China in Box</string>
