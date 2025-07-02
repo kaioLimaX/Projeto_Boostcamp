@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">Projeto_Boostcamp</string>
+    <string name="scroll_view">Nesta tela, é possível rolar para ver o conteúdo </string>
     <string name="image_button">Botão para voltar à tela inicial com os restaurantes.</string>
     <string name="image_view_yakisoba">Imagem do Yakisoba</string>
     <string name="image_capa_china_in_box">Capa do China in Box</string>
@@ -20,10 +22,10 @@
     <string name="frango_crispy">Frango Crispy Grande + Frango Empanado Grande + Frango a Passarinho Grande</string>
     <string name="descricao_frango_cripsy">Pedaços de coxa e sobrecoxa de frango com uma.....</string>
     <string name="serve_4_pessoas">Serve 4 pessoas</string>
-    <string name="desconto_frango_crispy">R$ 157,40</string>
-    <string name="preco_original_frango_crispy"><strike>R$ 202,70</strike></string>
-    <string name="macarr_o_oriental_iscas_de_frango_coca_cola">Macarrão Oriental Iscas de frango + Coca-Cola</string>
-    <string name="macarr_o_com_molho_base_de_shoyu_cobertos_com_iscas_de_frango_levemente_apimentadas_by_seara_e_cebolinha_picada_al_rgicos_nosso_molho_cont_m_crust_ceo_peixe_soja_e_derivados_pode_conter_trigo_ovos_e_leite_coca_cola_lata_normal_ou_zero_a_car">Macarrão com molho à base de shoyu cobertos com iscas de frango levemente apimentadas by Seara e cebolinha picada. Alérgicos nosso molho contém crustáceo, peixe, soja e derivados. Pode conter trigo, ovos e leite. + Coca-Cola lata (normal ou zero açúcar)</string>
+    <string name="desconto_frango">R$ 157,40</string>
+    <string name="valor_original_frango"><strike>R$ 202,70</strike></string>
+    <string name="macarrao_oriental">Macarrão Oriental Iscas de frango + Coca-Cola</string>
+    <string name="descricao_macarrao">Macarrão com molho à base de shoyu cobertos com iscas de frango levemente apimentadas by Seara e cebolinha picada. Alérgicos nosso molho contém crustáceo, peixe, soja e derivados. Pode conter trigo, ovos e leite. + Coca-Cola lata (normal ou zero açúcar)</string>
     <string name="serve_1_pessoa">Serve 1 pessoa</string>
     <string name="preco_original_macarrao">R$ 46,80</string>
 </resources>
