@@ -6,6 +6,7 @@ import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageButton
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
@@ -19,6 +20,10 @@ class DetailsRestaurantsActivity : AppCompatActivity() {
 
     private lateinit var voltarTelaInical: ImageButton
     private lateinit var irDetalhesProdutos: View
+    private lateinit var irDetalhesProdutos2: View
+    private lateinit var irDestaque1: ImageView
+    private lateinit var irDestaque2: ImageView
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,15 +40,28 @@ class DetailsRestaurantsActivity : AppCompatActivity() {
 
         voltarTelaInical = findViewById(R.id.image_btn_voltar_inicial)
         irDetalhesProdutos = findViewById(R.id.view_ir_detalhes_produtos)
+        irDetalhesProdutos2 = findViewById(R.id.view_ir_detalhes_produtos_2)
+        irDestaque1 = findViewById(R.id.image_view_destaque_1_china_in_box)
+        irDestaque2 = findViewById(R.id.image_view_destaque_2_china_in_box)
+
+        cliqueParaDetalhesEDestaque(irDetalhesProdutos)
+        cliqueParaDetalhesEDestaque(irDetalhesProdutos2)
+        cliqueParaDetalhesEDestaque(irDestaque1)
+        cliqueParaDetalhesEDestaque(irDestaque2)
+
 
         voltarTelaInical.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
-        irDetalhesProdutos.setOnClickListener {
+
+    }
+
+    private fun cliqueParaDetalhesEDestaque(view: View) {
+        view.setOnClickListener {
             val intent = Intent(this, DetailsProductActivity::class.java)
             startActivity(intent)
         }
-
     }
 }
+
