@@ -45,7 +45,6 @@ O principal objetivo foi **aprender a trabalhar com GitHub em um projeto real**,
 - Kotlin  
 - XML 
 - Android Studio  
-- Navegação com `NavHost`  
 - Material Design 3  
 - Git + GitHub (colaboração em equipe)
 
