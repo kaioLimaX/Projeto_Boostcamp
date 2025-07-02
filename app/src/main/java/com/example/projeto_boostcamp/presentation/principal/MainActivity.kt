@@ -1,21 +1,47 @@
 package com.example.projeto_boostcamp.presentation.principal
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.example.projeto_boostcamp.R
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.LinearSnapHelper
+import androidx.recyclerview.widget.RecyclerView
+import com.example.projeto_boostcamp.databinding.ActivityMainBinding
+import com.example.projeto_boostcamp.presentation.detalhes_restaurantes.DetailsRestaurantsActivity
 
 class MainActivity : AppCompatActivity() {
+
+    private val binding by lazy {
+        ActivityMainBinding.inflate(layoutInflater)
+    }
+
+    private lateinit var promoAdapter: PromoAdapter
+    private lateinit var lojaAdapter: LojaAdapter
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+        setContentView(binding.root)
+
+        iniciarPromoAdapter()
+        iniciarLojaAdapter()
+    }
+
+    private fun iniciarPromoAdapter() {
+        promoAdapter = PromoAdapter()
+        binding.rvPromo.adapter = promoAdapter
+        binding.rvPromo.layoutManager = LinearLayoutManager(this, RecyclerView.HORIZONTAL, false)
+        val snapHelper = LinearSnapHelper()
+        snapHelper.attachToRecyclerView(binding.rvPromo)
+    }
+
+    private fun iniciarLojaAdapter() {
+        lojaAdapter = LojaAdapter { loja ->
+            val intent = Intent(this, DetailsRestaurantsActivity::class.java)
+            intent.putExtra("loja", loja)
+            startActivity(intent)
         }
+
+        binding.rvLojas.adapter = lojaAdapter
+        binding.rvLojas.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
     }
 }
