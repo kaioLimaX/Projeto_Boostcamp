@@ -62,22 +62,26 @@ O principal objetivo foi **aprender a trabalhar com GitHub em um projeto real**,
 
 ## 📸 Screenshots
 
-> Adicione aqui imagens do app em funcionamento.
-
 <table>
   <tr>
     <th>Login</th>
     <th>Menu Principal</th>
     <th>Detalhes Restaurante</th>
-    <th>Detalhes Produto</th>
-    <th>Confirmação</th>
   </tr>
   <tr>
-    <td><img src="tela_login.png" width="200"/></td>
-    <td><img src="menu_principal.png" width="200"/></td>
-    <td><img src="tela_detalhes_restaurante.png" width="200"/></td>
-    <td><img src="tela_detalhes_produto.png" width="200"/></td>
-    <td><img src="tela_confirmacao.png" width="200"/></td>
+    <td><img src="tela_login.png" width="300"/></td>
+    <td><img src="menu_principal.png" width="300"/></td>
+    <td><img src="tela_detalhes_restaurante.png" width="300"/></td>
+  </tr>
+  <tr>
+    <th>Detalhes Produto</th>
+    <th>Confirmação</th>
+    <th></th>
+  </tr>
+  <tr>
+    <td><img src="tela_detalhes_produto.png" width="300"/></td>
+    <td><img src="tela_confirmacao.png" width="300"/></td>
+    <td></td>
   </tr>
 </table>
 
