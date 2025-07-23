@@ -64,9 +64,22 @@ O principal objetivo foi **aprender a trabalhar com GitHub em um projeto real**,
 
 > Adicione aqui imagens do app em funcionamento.
 
-| Tela de Login | Lista de Restaurantes | Detalhes do Produto |
-|---------------|-----------------------|----------------------|
-| ![Login](link_da_imagem_1) | ![Restaurantes](link_da_imagem_2) | ![Produto](link_da_imagem_3) |
+<table>
+  <tr>
+    <th>Login</th>
+    <th>Menu Principal</th>
+    <th>Detalhes Restaurante</th>
+    <th>Detalhes Produto</th>
+    <th>Confirmação</th>
+  </tr>
+  <tr>
+    <td><img src="tela_login.png" width="200"/></td>
+    <td><img src="menu_principal.png" width="200"/></td>
+    <td><img src="tela_detalhes_restaurante.png" width="200"/></td>
+    <td><img src="tela_detalhes_produto.png" width="200"/></td>
+    <td><img src="tela_confirmacao.png" width="200"/></td>
+  </tr>
+</table>
 
 ---
 
