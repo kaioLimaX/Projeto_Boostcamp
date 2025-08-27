@@ -28,4 +28,8 @@
     <string name="descricao_macarrao">Macarrão com molho à base de shoyu cobertos com iscas de frango levemente apimentadas by Seara e cebolinha picada. Alérgicos nosso molho contém crustáceo, peixe, soja e derivados. Pode conter trigo, ovos e leite. + Coca-Cola lata (normal ou zero açúcar)</string>
     <string name="serve_1_pessoa">Serve 1 pessoa</string>
     <string name="preco_original_macarrao">R$ 46,80</string>
+    <string name="imagem_opcional_rv">imagem opcional rv</string>
+    <string name="btn_mais">botão de mais</string>
+    <string name="btn_menos">botão de menos</string>
+    <string name="numero_vezes">Numero de vezes do pedido</string>
 </resources>

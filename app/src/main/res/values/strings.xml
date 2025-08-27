@@ -30,11 +30,14 @@
     <string name="txt_description_opcionais">Selecione opcionais abaixo para complementar</string>
     <string name="txt_nome_produto">Aula Combo Hamburguer + Batata + MilkShake</string>
     <string name="txt_descricao_produto">Combo completo para animar seu final de semana</string>
-    <string name="txt_nome_item_produto">Picles</string>
-    <string name="txt_descricao_item_produto">descrição</string>
-    <string name="txt_valor_item_opcionais">R$ 10,00</string>
+    <string name="txt_nome_item_produto">Yakisoba Clássico grande - 900g</string>
+    <string name="txt_valor_item_opcionais">+R$ 68,90</string>
     <string name="txt_titulo_login">Falta pouco para matar\nsua fome</string>
     <string name="txt_input_email">Digite seu e-mail</string>
     <string name="btn_entrar">Entrar</string>
     <string name="txt_input_senha">Digite sua senha</string>
+    <string name="imagem_opcional_rv">imagem opcional rv</string>
+    <string name="btn_mais">botão de mais</string>
+    <string name="btn_menos">botão de menos</string>
+    <string name="numero_vezes">0</string>
 </resources>
