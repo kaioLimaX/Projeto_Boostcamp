@@ -32,4 +32,9 @@
     <string name="btn_mais">botão de mais</string>
     <string name="btn_menos">botão de menos</string>
     <string name="numero_vezes">Numero de vezes do pedido</string>
+    <string name="escolha_opções">Opções</string>
+    <string name="btn_confirmar">botão de Confirmar</string>
+    <string name="image_btn_menos">Botão menos</string>
+    <string name="text_valor_final">R$20,00</string>
+    <string name="text_descricao_valor">a partir de R$ 49,90</string>
 </resources>

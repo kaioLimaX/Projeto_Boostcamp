@@ -57,7 +57,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
-                android:text="Escolha opcionais"
+                android:text="@string/escolha_opções"
+                android:textColor="#616161"
+                android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -66,8 +68,10 @@
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
                 android:layout_marginBottom="8dp"
                 android:text="@string/txt_description_opcionais"
+                android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/textView"
                 app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -98,7 +102,9 @@
                 android:id="@+id/textView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
                 android:text="@string/txt_descricao_produto"
+                android:textSize="14sp"
                 app:layout_constraintStart_toStartOf="@+id/textView3"
                 app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -107,8 +113,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="R$20,00"
-                android:textSize="16sp"
+                android:text="@string/text_descricao_valor"
+                android:textSize="14sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@+id/textView3"
                 app:layout_constraintTop_toBottomOf="@+id/textView6" />
@@ -126,19 +132,19 @@
             app:layout_constraintStart_toStartOf="parent">
 
             <ImageButton
-                android:id="@+id/imageButton3"
+                android:id="@+id/image_btn_menos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="8dp"
                 android:background="@null"
-                android:contentDescription="teste"
+                android:contentDescription="@string/image_btn_menos"
                 app:layout_constraintBottom_toBottomOf="@+id/textView11"
                 app:layout_constraintEnd_toStartOf="@+id/text_quantidade_opcional"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/textView11"
                 app:srcCompat="@drawable/ic_remove"
-                tools:ignore="UnknownIdInLayout" />
+                tools:ignore="UnknownIdInLayout,TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
 
             <ImageButton
                 android:id="@+id/imageButton4"
@@ -146,20 +152,21 @@
                 android:layout_height="21dp"
                 android:layout_marginStart="8dp"
                 android:background="@null"
-                android:contentDescription="teste"
+                android:contentDescription="@string/image_btn_mais"
                 app:layout_constraintBottom_toBottomOf="@+id/textView11"
                 app:layout_constraintStart_toEndOf="@+id/textView11"
                 app:layout_constraintTop_toTopOf="@+id/textView11"
-                app:srcCompat="@drawable/ic_add" />
+                app:srcCompat="@drawable/ic_add"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <TextView
                 android:id="@+id/textView11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:text="0"
+                android:text="@string/text_numero_itens"
                 app:layout_constraintBottom_toBottomOf="@+id/textView10"
-                app:layout_constraintStart_toEndOf="@+id/imageButton3"
+                app:layout_constraintStart_toEndOf="@+id/image_btn_menos"
                 app:layout_constraintTop_toTopOf="@+id/textView10" />
 
             <Button
@@ -170,7 +177,7 @@
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="8dp"
                 android:backgroundTint="#DD2337"
-                android:text="Confirmar"
+                android:text="@string/btn_confirmar"
                 android:textSize="16sp"
                 app:cornerRadius="8dp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -183,7 +190,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
-                android:text="R$20,00"
+                android:text="@string/text_valor_final"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/btn_confirmar"
