@@ -7,7 +7,7 @@
     android:padding="8dp">
 
     <TextView
-        android:id="@+id/text_titulo_opcional"
+        android:id="@+id/text_titulo_produto"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -17,10 +17,10 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/image_opcional" />
+        app:layout_constraintTop_toTopOf="@+id/image_detalhe_produto" />
 
     <TextView
-        android:id="@+id/text_preco_opcional"
+        android:id="@+id/text_preco_produto"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -28,10 +28,10 @@
         android:textColor="#616161"
         android:textSize="12sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/image_opcional"
-        app:layout_constraintEnd_toEndOf="@+id/text_titulo_opcional"
-        app:layout_constraintStart_toStartOf="@+id/text_titulo_opcional"
-        app:layout_constraintTop_toBottomOf="@+id/text_titulo_opcional"
+        app:layout_constraintBottom_toBottomOf="@+id/image_detalhe_produto"
+        app:layout_constraintEnd_toEndOf="@+id/text_titulo_produto"
+        app:layout_constraintStart_toStartOf="@+id/text_titulo_produto"
+        app:layout_constraintTop_toBottomOf="@+id/text_titulo_produto"
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageButton
@@ -42,9 +42,9 @@
         android:background="@null"
         android:contentDescription="@string/btn_mais"
         android:scaleType="center"
-        app:layout_constraintBottom_toBottomOf="@+id/image_opcional"
-        app:layout_constraintStart_toEndOf="@+id/image_opcional"
-        app:layout_constraintTop_toTopOf="@+id/image_opcional"
+        app:layout_constraintBottom_toBottomOf="@+id/image_detalhe_produto"
+        app:layout_constraintStart_toEndOf="@+id/image_detalhe_produto"
+        app:layout_constraintTop_toTopOf="@+id/image_detalhe_produto"
         app:srcCompat="@drawable/ic_remove"
         tools:ignore="TouchTargetSizeCheck" />
 
@@ -55,14 +55,14 @@
         android:layout_marginEnd="8dp"
         android:background="@null"
         android:contentDescription="@string/btn_menos"
-        app:layout_constraintBottom_toBottomOf="@+id/text_quantidade_opcional"
+        app:layout_constraintBottom_toBottomOf="@+id/text_quantidade_produto"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/text_quantidade_opcional"
+        app:layout_constraintTop_toTopOf="@+id/text_quantidade_produto"
         app:srcCompat="@drawable/ic_add"
         tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
-        android:id="@+id/text_quantidade_opcional"
+        android:id="@+id/text_quantidade_produto"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -75,7 +75,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageButton" />
 
     <ImageView
-        android:id="@+id/image_opcional"
+        android:id="@+id/image_detalhe_produto"
         android:layout_width="80dp"
         android:layout_height="60dp"
         android:layout_marginStart="4dp"

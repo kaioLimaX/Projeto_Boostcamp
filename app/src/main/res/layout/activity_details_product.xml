@@ -140,7 +140,7 @@
                 android:background="@null"
                 android:contentDescription="@string/image_btn_menos"
                 app:layout_constraintBottom_toBottomOf="@+id/textView11"
-                app:layout_constraintEnd_toStartOf="@+id/text_quantidade_opcional"
+                app:layout_constraintEnd_toStartOf="@+id/text_quantidade_produto"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/textView11"
                 app:srcCompat="@drawable/ic_remove"
@@ -198,7 +198,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_opcionais"
+            android:id="@+id/rv_detalhe_produto"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginStart="8dp"
@@ -211,7 +211,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
             tools:itemCount="6"
-            tools:listitem="@layout/item_opticionais" />
+            tools:listitem="@layout/item_detalhe_produto" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
