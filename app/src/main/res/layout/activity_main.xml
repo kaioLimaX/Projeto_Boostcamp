@@ -7,100 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".presentation.principal.MainActivity">
 
-    <ImageView
-        android:id="@+id/imgRestaurantes"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintEnd_toStartOf="@+id/imgMercado"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/comida_1" />
-
-    <ImageView
-        android:id="@+id/imgPet"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="56dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imgFarmacia"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pet_1" />
-
-    <ImageView
-        android:id="@+id/imgFarmacia"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintEnd_toStartOf="@+id/imgPet"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imgMercado"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/farmacia" />
-
-    <ImageView
-        android:id="@+id/imgMercado"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintEnd_toStartOf="@+id/imgFarmacia"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imgRestaurantes"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/mercado_1" />
-
-    <ImageView
-        android:id="@+id/imgExpress"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toStartOf="@+id/imgBebidas"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textRestaurantes"
-        app:srcCompat="@drawable/express" />
-
-    <ImageView
-        android:id="@+id/imgBebidas"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toStartOf="@+id/imgShopping"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imgExpress"
-        app:layout_constraintTop_toBottomOf="@+id/textMercado"
-        app:srcCompat="@drawable/bebida_1" />
-
-    <ImageView
-        android:id="@+id/imgShopping"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toStartOf="@+id/imgGourmet"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imgBebidas"
-        app:layout_constraintTop_toBottomOf="@+id/textFarmacia"
-        app:srcCompat="@drawable/flotes_1" />
-
-    <ImageView
-        android:id="@+id/imgGourmet"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="56dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imgShopping"
-        app:layout_constraintTop_toBottomOf="@+id/textPet"
-        app:srcCompat="@drawable/comida_2" />
-
     <TextView
         android:id="@+id/textLojas"
         android:layout_width="wrap_content"
@@ -117,84 +23,11 @@
         android:id="@+id/rvPromo"
         android:layout_width="0dp"
         android:layout_height="195dp"
-        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textGourmet"
+        app:layout_constraintTop_toBottomOf="@+id/rvCategorias"
         tools:listitem="@layout/promo_view" />
-
-    <TextView
-        android:id="@+id/textRestaurantes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Restaurantes"
-        app:layout_constraintEnd_toEndOf="@+id/imgRestaurantes"
-        app:layout_constraintStart_toStartOf="@+id/imgRestaurantes"
-        app:layout_constraintTop_toBottomOf="@+id/imgRestaurantes" />
-
-    <TextView
-        android:id="@+id/textMercado"
-        android:layout_width="58dp"
-        android:layout_height="16dp"
-        android:text="Mercado"
-        app:layout_constraintEnd_toEndOf="@+id/imgMercado"
-        app:layout_constraintStart_toStartOf="@+id/imgMercado"
-        app:layout_constraintTop_toBottomOf="@+id/imgMercado" />
-
-    <TextView
-        android:id="@+id/textFarmacia"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Farmácia"
-        app:layout_constraintEnd_toEndOf="@+id/imgFarmacia"
-        app:layout_constraintStart_toStartOf="@+id/imgFarmacia"
-        app:layout_constraintTop_toBottomOf="@+id/imgFarmacia" />
-
-    <TextView
-        android:id="@+id/textPet"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pet"
-        app:layout_constraintEnd_toEndOf="@+id/imgPet"
-        app:layout_constraintStart_toStartOf="@+id/imgPet"
-        app:layout_constraintTop_toBottomOf="@+id/imgPet" />
-
-    <TextView
-        android:id="@+id/textExpress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Express"
-        app:layout_constraintEnd_toEndOf="@+id/imgExpress"
-        app:layout_constraintStart_toStartOf="@+id/imgExpress"
-        app:layout_constraintTop_toBottomOf="@+id/imgExpress" />
-
-    <TextView
-        android:id="@+id/textBebidas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Bebidas"
-        app:layout_constraintEnd_toEndOf="@+id/imgBebidas"
-        app:layout_constraintStart_toStartOf="@+id/imgBebidas"
-        app:layout_constraintTop_toBottomOf="@+id/imgBebidas" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Shopping"
-        app:layout_constraintEnd_toEndOf="@+id/imgShopping"
-        app:layout_constraintStart_toStartOf="@+id/imgShopping"
-        app:layout_constraintTop_toBottomOf="@+id/imgShopping" />
-
-    <TextView
-        android:id="@+id/textGourmet"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Gourmet"
-        app:layout_constraintEnd_toEndOf="@+id/imgGourmet"
-        app:layout_constraintStart_toStartOf="@+id/imgGourmet"
-        app:layout_constraintTop_toBottomOf="@+id/imgGourmet" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvLojas"
@@ -208,5 +41,36 @@
         app:layout_constraintTop_toBottomOf="@+id/textLojas"
         app:layout_constraintVertical_bias="0.0"
         tools:listitem="@layout/lojas_view" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCategorias"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:clipToPadding="false"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        tools:layoutManager="GridLayoutManager"
+        tools:listitem="@layout/recycler_view_item_3"
+        tools:spanCount="5" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIconTint="@android:color/black"
+        app:titleTextColor="@android:color/black" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
