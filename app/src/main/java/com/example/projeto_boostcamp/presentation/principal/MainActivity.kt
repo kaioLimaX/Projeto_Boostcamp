@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.WindowManager
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
@@ -67,7 +68,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun iniciarCategoriasAdapter() {
         categoriasAdapter = CategoriasAdapter { categoria ->
-
+            Toast.makeText(this, "Categoria: ${categoria.nome}", Toast.LENGTH_SHORT).show()
         }
         binding.rvCategorias.adapter = categoriasAdapter
         binding.rvCategorias.layoutManager = GridLayoutManager(
