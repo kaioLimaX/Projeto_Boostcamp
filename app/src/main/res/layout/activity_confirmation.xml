@@ -59,8 +59,8 @@
                 android:textStyle="bold" />
 
             <!-- Substituir por layout real de itens -->
-            <include layout="@layout/item_opticionais" />
-            <include layout="@layout/item_opticionais" />
+            <include layout="@layout/item_detalhe_produto" />
+            <include layout="@layout/item_detalhe_produto" />
 
             <!-- Endereço -->
             <TextView
