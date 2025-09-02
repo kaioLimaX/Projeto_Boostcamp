@@ -27,19 +27,30 @@
     <string name="descricao_macarrao">Macarrão com molho à base de shoyu cobertos com iscas de frango levemente apimentadas by Seara e cebolinha picada. Alérgicos nosso molho contém crustáceo, peixe, soja e derivados. Pode conter trigo, ovos e leite. + Coca-Cola lata (normal ou zero açúcar)</string>
     <string name="serve_1_pessoa">Serve 1 pessoa</string>
     <string name="preco_original_macarrao">R$ 46,80</string>
-    <string name="txt_description_opcionais">Selecione opcionais abaixo para complementar</string>
-    <string name="txt_nome_produto">Aula Combo Hamburguer + Batata + MilkShake</string>
-    <string name="txt_descricao_produto">Combo completo para animar seu final de semana</string>
-    <string name="txt_nome_item_produto">Picles</string>
-    <string name="txt_descricao_item_produto">descrição</string>
-    <string name="txt_valor_item_opcionais">R$ 10,00</string>
+    <string name="txt_description_opcionais">Escolha de 1 a 2</string>
+    <string name="txt_nome_produto">Yakisoba clássico</string>
+    <string name="txt_descricao_produto">Nosso delicioso macarrão oriental</string>
+    <string name="txt_nome_item_produto">Yakisoba Clássico grande - 900g</string>
+    <string name="txt_valor_item_opcionais">+R$ 68,90</string>
     <string name="txt_titulo_login">Falta pouco para matar\nsua fome</string>
     <string name="txt_input_email">Digite seu e-mail</string>
     <string name="btn_entrar">Entrar</string>
-    <string name="txt_input_senha">Digite sua senha</string>
+  <string name="txt_input_senha">Digite sua senha</string>
     <string name="nome_usuario">Jamilton</string>
     <string name="ver_meu_clube">Ver meu clube</string>
     <string name="titulo_doofi">Conheça o novo app Doofi</string>
     <string name="descricao_doofi">Diversão e prêmios em saldo na carteira IFood</string>
     <string name="novo">NOVO!</string>
+=======
+    <string name="imagem_opcional_rv">imagem opcional rv</string>
+    <string name="btn_mais">botão de mais</string>
+    <string name="btn_menos">botão de menos</string>
+    <string name="numero_vezes">0</string>
+    <string name="escolha_opções">Opções</string>
+    <string name="btn_confirmar">Confirmar</string>
+    <string name="image_btn_mais">botão de mais</string>
+    <string name="image_btn_menos">Botão menos</string>
+    <string name="text_valor_final">R$180,50</string>
+    <string name="text_numero_itens">1</string>
+    <string name="text_descricao_valor">a partir de R$ 49,90</string>
 </resources>
