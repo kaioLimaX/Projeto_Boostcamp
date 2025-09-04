@@ -5,6 +5,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.projeto_boostcamp.R
 
@@ -24,6 +25,11 @@ class ConfirmationRecyclerActivity : AppCompatActivity()
             insets
         }
 
+        val lista = listOf("Yakissoba Clássico Grande - 900g", "Mega X Burguer Double Trouble")
+
         rvLista = findViewById(R.id.rv_lista_confirmation)
+        rvLista.adapter = ConfirmationAdapter( lista )
+        rvLista.layoutManager = LinearLayoutManager(this)
+
     }
 }
