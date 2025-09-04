@@ -46,6 +46,9 @@ class ConfirmationActivity : AppCompatActivity() {
 
         setupListeners()
 
+        val lista = listOf("Yakissoba Clássico Grande - 900g", "Mega X Burguer Double Trouble", "TESTE", "TESTE", "TESTE", "TESTE", "TESTE", "TESTE", "TESTE", "TESTE")
+
+        confirmationAdapter = ConfirmationAdapter( lista )
         binding.rvListaConfirmation.adapter = confirmationAdapter
         binding.rvListaConfirmation.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
     }
