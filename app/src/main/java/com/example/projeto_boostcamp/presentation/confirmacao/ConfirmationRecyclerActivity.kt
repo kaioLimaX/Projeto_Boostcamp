@@ -27,7 +27,7 @@ class ConfirmationRecyclerActivity : AppCompatActivity()
 
         val lista = listOf("Yakissoba Clássico Grande - 900g", "Mega X Burguer Double Trouble")
 
-        rvLista = findViewById(R.id.rv_lista_confirmation)
+        rvLista = findViewById(R.id.rvListaConfirmation)
         rvLista.adapter = ConfirmationAdapter( lista )
         rvLista.layoutManager = LinearLayoutManager(this)
 

@@ -10,6 +10,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.projeto_boostcamp.databinding.ActivityConfirmationBinding
 import com.example.projeto_boostcamp.presentation.principal.MainActivity
 import com.example.projeto_boostcamp.presentation.principal.PromoAdapter
@@ -18,7 +20,8 @@ import kotlin.jvm.java
 class ConfirmationActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityConfirmationBinding
-    private lateinit var produtosAdapter: PromoAdapter
+    private lateinit var confirmationAdapter: ConfirmationAdapter
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,6 +45,9 @@ class ConfirmationActivity : AppCompatActivity() {
         }
 
         setupListeners()
+
+        binding.rvListaConfirmation.adapter = confirmationAdapter
+        binding.rvListaConfirmation.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
     }
 
     private fun setupListeners() {
