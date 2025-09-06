@@ -55,8 +55,6 @@ class ConfirmationActivity : AppCompatActivity() {
 
     private fun setupListeners() {
         binding.imageBtnVoltarInicial.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
             finish()
         }
     }
