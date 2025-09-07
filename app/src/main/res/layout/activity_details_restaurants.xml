@@ -51,6 +51,18 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_view_combo_com_desconto" />
 
+        <TextView
+            android:id="@+id/text_view_combo_com_desconto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/combo_com_desconto"
+            android:textAlignment="viewStart"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/text_view_combo_yakisoba"
+            app:layout_constraintTop_toTopOf="@+id/guideline" />
+
         <ImageView
             android:id="@+id/image_view_yakisoba"
             android:layout_width="120dp"
@@ -63,21 +75,9 @@
             app:layout_constraintBottom_toBottomOf="@+id/text_view_descricao"
             app:layout_constraintEnd_toEndOf="@+id/view_ir_detalhes_produtos"
             app:layout_constraintTop_toTopOf="@+id/text_view_combo_yakisoba"
-            app:layout_constraintVertical_bias="0.464"
+            app:layout_constraintVertical_bias="0.428"
             app:srcCompat="@drawable/yakisoba_bowl"
             tools:targetApi="31" />
-
-        <TextView
-            android:id="@+id/text_view_combo_com_desconto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:text="@string/combo_com_desconto"
-            android:textAlignment="viewStart"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/text_view_combo_yakisoba"
-            app:layout_constraintTop_toTopOf="@+id/guideline" />
 
         <TextView
             android:id="@+id/text_view_combo_yakisoba"
@@ -199,6 +199,8 @@
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.5" />
 
+        s
+
         <ImageView
             android:id="@+id/image_view_destaque_1_china_in_box"
             android:layout_width="0dp"
@@ -213,8 +215,10 @@
             android:scaleType="centerCrop"
             app:layout_constraintBottom_toTopOf="@+id/guideline"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_view_destaque"
+            app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@drawable/destaque_1_china_in_box"
             tools:targetApi="31" />
 
@@ -271,7 +275,7 @@
             app:layout_constraintTop_toTopOf="@+id/text_view_desconto_3_pratos" />
 
         <ImageView
-            android:id="@+id/image_view_destaque_2_china_in_box"
+            android:id="@+id/image_view_frango"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginStart="16dp"
@@ -296,8 +300,8 @@
             android:textSize="14sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/text_view_desconto_progressivo"
-            app:layout_constraintEnd_toEndOf="@+id/image_view_destaque_2_china_in_box"
-            app:layout_constraintStart_toStartOf="@+id/image_view_destaque_2_china_in_box"
+            app:layout_constraintEnd_toEndOf="@+id/image_view_frango"
+            app:layout_constraintStart_toStartOf="@+id/image_view_frango"
             app:layout_constraintTop_toTopOf="@+id/text_view_desconto_progressivo" />
 
         <TextView
