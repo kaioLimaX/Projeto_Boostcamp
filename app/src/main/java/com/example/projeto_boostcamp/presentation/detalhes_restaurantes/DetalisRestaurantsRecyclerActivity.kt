@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.projeto_boostcamp.R
 import com.example.projeto_boostcamp.presentation.perfil.Opcao
 
-class DetalisRestaurantsRecyclerActivity : AppCompatActivity() {
+class itens_restarantsA: AppCompatActivity() {
 
     private lateinit var rvList: RecyclerView
 
@@ -20,7 +20,7 @@ class DetalisRestaurantsRecyclerActivity : AppCompatActivity() {
 
         val List =
 
-            private var listaProduto = mutableListOf(
+            val listaProduto = mutableListOf(
             Produto(R.drawable.frango, "Bowl frango tarê", "Bowl com saboroso arroz Yakimeshi, o nosso tradicional arroz soltinho refogado com flocos de ovos, cubinhos de cenoura, presunto, cebolinha picada com óleo de gergelim, coberto com pedaços de frango desossado coberto com molho tarê, gengibre e cebolinha picada.\n" +
                     "Serve 1 pessoa\n" +
                     "(350g)","R$37,90"),
@@ -31,6 +31,9 @@ class DetalisRestaurantsRecyclerActivity : AppCompatActivity() {
                     "(350g)""R$39,90"),
             Produto(R.drawable.yakisoba, "Yakisoba bowl", "O Yakisoba mais pedido em um novo formato, macarrão oriental, com carne e frango. Acompanhado por legumes frescos (cenoura, brócolis, acelga, repolho) e cogumelos, finalizados com molho à base de shoyu. Alérgicos, nosso molho contém crustáceo, peixe, soja e derivados. Pode conter trigo, ovos e leite.","R$39,90"),
 
+             rvList = findViewById(R.id.rv_detalhe_produto)
+             rvList.adapter = MensagemAdapter(lista)
+             rvLista.layoutProdutos = LinearLayoutItens_restarantsAdapter(this)
         }
     }
 }

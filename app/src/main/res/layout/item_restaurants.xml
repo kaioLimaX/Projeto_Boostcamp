@@ -28,7 +28,7 @@
         tools:layout_editor_absoluteX="299dp" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/text_descricao"
         android:layout_width="170dp"
         android:layout_height="100dp"
         android:layout_marginStart="16dp"
@@ -40,7 +40,7 @@
         tools:layout_editor_absoluteY="50dp" />
 
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/text.nome_do_prato"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Bowl frango tarê"
