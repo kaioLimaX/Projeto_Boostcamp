@@ -1,53 +1,60 @@
 package com.example.projeto_boostcamp.presentation.detalhes_restaurantes
 
+
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView.Adapter
+import com.example.projeto_boostcamp.R
 import com.example.projeto_boostcamp.databinding.PromoViewBinding
 
 class Itens_restarantsAdapter(
-    private val list: List <String>
-):RecyclerView.Adapter<Itens_restaurantesAdapter.PromoViewHolder>() {
+    private val list: List <Produto>
+): Adapter<Itens_restarantsAdapter.ItensViewHolder>() {
 
 
-    private val textName: TextView
+    inner class ItensViewHolder(
+        val itensView: View
+    ) : RecyclerView.ViewHolder(itensView){
 
-    init {
-        textName = itemView.findViemById(R.id.text_name)
+        val imagem: ImageView = itemView.findViewById(R.id.iv_comida)
+        val titulo: TextView = itemView.findViewById(R.id.text_nome_do_prato)
+        val descricao: TextView = itemView.findViewById(R.id.text_descricao)
+        val preco: TextView = itemView.findViewById(R.id.text_preco)
     }
-    }
 
-    inner class RecyclerView(
-        val itensView: Itens_restarantsAdapter.RecyclerView
-    ) : androidx.recyclerview.widget.RecyclerView.ViewHolder
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItensViewHolder {
 
-
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PromoViewHolder {
-
-        val binding = PromoViewBinding.inflate(
-            LayoutInflater.from(parent.context), parent, false
+        val layoutInflater = LayoutInflater.from(
+            parent.context
         )
 
+        val itemView = layoutInflater.inflate(
+            R.layout.item_restaurants, parent, false
+        )
 
-        return PromoViewHolder(binding)
+        return ItensViewHolder( itemView )
     }
 
-    override fun onBindViewHolder(holder: PromoViewHolder, position: Int) {
-
-        val nome = list[position]
-        holder.binding.textName.text = name
+    override fun onBindViewHolder(
+        holder: ItensViewHolder,
+        position: Int
+    ) {
+        val produto = list[position]
+        holder.titulo.text = produto.titulo
+        holder.imagem.setImageResource(produto.imagem)
+        holder.descricao.text = produto.descricao
+        holder.preco.text = produto.preco
     }
+
 
     override fun getItemCount(): Int {
         return list.size
     }
 
-    inner class ViewHolder(binding.root) (
-        val binding: PromoViewBinding
-    ): RecyclerView.ViewHolder(binding.root)
-}
+
 
 }

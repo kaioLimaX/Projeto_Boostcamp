@@ -6,7 +6,7 @@
     android:layout_height="wrap_content">
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/iv_comida"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginStart="256dp"
@@ -17,14 +17,14 @@
         app:srcCompat="@drawable/frango" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/text_preco"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="-4dp"
         android:text="R$ 37,90"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/iv_comida"
         tools:layout_editor_absoluteX="299dp" />
 
     <TextView
@@ -40,7 +40,7 @@
         tools:layout_editor_absoluteY="50dp" />
 
     <TextView
-        android:id="@+id/text.nome_do_prato"
+        android:id="@+id/text_nome_do_prato"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Bowl frango tarê"

@@ -12,9 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Projeto_Boostcamp"
         tools:targetApi="31">
-        <activity
-            android:name=".presentation.detalhes_restaurantes.DetalisRestaurantsRecyclerActivity"
-            android:exported="false" />
+
         <activity
             android:name=".presentation.perfil.PerfilActivity"
             android:exported="false" />

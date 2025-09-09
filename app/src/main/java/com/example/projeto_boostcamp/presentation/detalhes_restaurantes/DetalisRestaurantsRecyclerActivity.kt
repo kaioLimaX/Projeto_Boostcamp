@@ -1,3 +1,4 @@
+/*
 package com.example.projeto_boostcamp.presentation.detalhes_restaurantes
 
 import android.os.Bundle
@@ -18,7 +19,6 @@ class itens_restarantsA: AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_detalis_restaurants_recycler)
 
-
             val listaProduto = mutableListOf(
             Produto(R.drawable.frango, "Bowl frango tarê", "Bowl com saboroso arroz Yakimeshi, o nosso tradicional arroz soltinho refogado com flocos de ovos, cubinhos de cenoura, presunto, cebolinha picada com óleo de gergelim, coberto com pedaços de frango desossado coberto com molho tarê, gengibre e cebolinha picada.\n" +
                     "Serve 1 pessoa\n" +
@@ -31,8 +31,8 @@ class itens_restarantsA: AppCompatActivity() {
             Produto(R.drawable.yakisoba, "Yakisoba bowl", "O Yakisoba mais pedido em um novo formato, macarrão oriental, com carne e frango. Acompanhado por legumes frescos (cenoura, brócolis, acelga, repolho) e cogumelos, finalizados com molho à base de shoyu. Alérgicos, nosso molho contém crustáceo, peixe, soja e derivados. Pode conter trigo, ovos e leite.","R$39,90"),
             )
              rvList = findViewById(R.id.rv_detalhe_produto)
-             rvList.adapter = LinearLayoutItens_restaurantesAdapter(listaProduto)
+             rvList.adapter = Itens_restarantsAdapter(listaProduto)
              rvList.layoutManager = LinearLayoutManager(this)
         }
     }
-}
+}*/
