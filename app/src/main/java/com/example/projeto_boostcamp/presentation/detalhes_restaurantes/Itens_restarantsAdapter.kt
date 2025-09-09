@@ -12,7 +12,8 @@ import com.example.projeto_boostcamp.R
 import com.example.projeto_boostcamp.databinding.PromoViewBinding
 
 class Itens_restarantsAdapter(
-    private val list: List <Produto>
+    private val list: List <Produto>,
+    private val onItemClick: (Produto) -> Unit
 ): Adapter<Itens_restarantsAdapter.ItensViewHolder>() {
 
 
@@ -43,6 +44,9 @@ class Itens_restarantsAdapter(
         holder: ItensViewHolder,
         position: Int
     ) {
+        holder.itemView.setOnClickListener {
+            onItemClick(list[position])
+        }
         val produto = list[position]
         holder.titulo.text = produto.titulo
         holder.imagem.setImageResource(produto.imagem)
