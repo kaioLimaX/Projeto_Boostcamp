@@ -76,11 +76,13 @@ O principal objetivo foi **aprender a trabalhar com GitHub em um projeto real**,
   <tr>
     <th>Detalhes Produto</th>
     <th>Confirmação</th>
+     <th>Perfil</th>
     <th></th>
   </tr>
   <tr>
     <td><img src="tela_detalhes_produto.png" width="300"/></td>
     <td><img src="tela_confirmacao.png" width="300"/></td>
+     <td><img src="tela_perfil.png" width="300"/></td>
     <td></td>
   </tr>
 </table>
