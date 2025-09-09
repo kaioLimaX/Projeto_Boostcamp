@@ -9,7 +9,7 @@ import com.example.projeto_boostcamp.databinding.PromoViewBinding
 
 class Itens_restarantsAdapter(
     private val list: List <String>
-): RecyclerView.Adapter<>() {
+):RecyclerView.Adapter<Itens_restaurantesAdapter.PromoViewHolder>() {
 
 
     private val textName: TextView
@@ -25,31 +25,29 @@ class Itens_restarantsAdapter(
 
 
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ERROR {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PromoViewHolder {
 
-        val layoutInflater = LayoutInflater.from(
-            parent.context
-        )
-
-        val itensView = layoutInflater.inflate(
-            R.layout.item_restaurants,parent,false
+        val binding = PromoViewBinding.inflate(
+            LayoutInflater.from(parent.context), parent, false
         )
 
 
-        return Itens_restarantsAdapter(itensView)
+        return PromoViewHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: ERROR, position: Int) {
+    override fun onBindViewHolder(holder: PromoViewHolder, position: Int) {
 
         val nome = list[position]
-        mensagemViewholder.textName.text = name
+        holder.binding.textName.text = name
     }
 
     override fun getItemCount(): Int {
         return list.size
     }
 
-    inner class PromoViewHolder (
+    inner class ViewHolder(binding.root) (
         val binding: PromoViewBinding
+    ): RecyclerView.ViewHolder(binding.root)
+}
 
 }
