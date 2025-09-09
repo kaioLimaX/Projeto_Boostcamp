@@ -4,9 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.pm.ActivityInfo
 import android.os.Bundle
-import android.view.View
 import android.widget.ImageButton
-import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
@@ -56,7 +54,7 @@ class DetailsRestaurantsActivity : AppCompatActivity() {
             Produto(R.drawable.yakisoba, "Yakisoba bowl", "O Yakisoba mais pedido em um novo formato, macarrão oriental, com carne e frango. Acompanhado por legumes frescos (cenoura, brócolis, acelga, repolho) e cogumelos, finalizados com molho à base de shoyu. Alérgicos, nosso molho contém crustáceo, peixe, soja e derivados. Pode conter trigo, ovos e leite.","R$39,90"),
         )
         rvList = findViewById(R.id.rv_list)
-        rvList.adapter = Itens_restarantsAdapter(listaProduto){
+        rvList.adapter = DetailsRestaurantAdapter(listaProduto){
             startActivity(Intent(this, DetailsProductActivity::class.java))
         }
         rvList.layoutManager = LinearLayoutManager(

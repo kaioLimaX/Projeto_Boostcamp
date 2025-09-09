@@ -9,12 +9,11 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.Adapter
 import com.example.projeto_boostcamp.R
-import com.example.projeto_boostcamp.databinding.PromoViewBinding
 
-class Itens_restarantsAdapter(
+class DetailsRestaurantAdapter(
     private val list: List <Produto>,
     private val onItemClick: (Produto) -> Unit
-): Adapter<Itens_restarantsAdapter.ItensViewHolder>() {
+): Adapter<DetailsRestaurantAdapter.ItensViewHolder>() {
 
 
     inner class ItensViewHolder(
