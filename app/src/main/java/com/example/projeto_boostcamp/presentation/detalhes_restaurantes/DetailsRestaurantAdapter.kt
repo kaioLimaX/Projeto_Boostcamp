@@ -17,7 +17,7 @@ class DetailsRestaurantAdapter(
 
 
     inner class ItensViewHolder(
-        val itensView: View
+    itensView: View
     ) : RecyclerView.ViewHolder(itensView){
 
         val imagem: ImageView = itemView.findViewById(R.id.iv_comida)
