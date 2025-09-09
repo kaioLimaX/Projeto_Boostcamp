@@ -66,7 +66,7 @@
             <!-- Endereço -->
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="200dp">
+                android:layout_height="300dp">
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rvListaConfirmation"
@@ -171,7 +171,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="R$ 20,00" />
+                    android:text="R$ 180,50" />
             </LinearLayout>
 
             <LinearLayout
@@ -206,7 +206,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="R$ 26,90"
+                    android:text="R$ 187,40"
                     android:textStyle="bold" />
             </LinearLayout>
 

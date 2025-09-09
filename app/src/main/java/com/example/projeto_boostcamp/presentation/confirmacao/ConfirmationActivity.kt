@@ -1,8 +1,6 @@
 package com.example.projeto_boostcamp.presentation.confirmacao
 
-import android.app.Activity
 import android.content.Intent
-import android.os.Build.VERSION_CODES.M
 import android.os.Bundle
 import android.widget.Button
 import com.example.projeto_boostcamp.R
@@ -14,7 +12,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.projeto_boostcamp.databinding.ActivityConfirmationBinding
 import com.example.projeto_boostcamp.presentation.principal.MainActivity
-import com.example.projeto_boostcamp.presentation.principal.PromoAdapter
 import kotlin.jvm.java
 
 class ConfirmationActivity : AppCompatActivity() {
@@ -46,9 +43,28 @@ class ConfirmationActivity : AppCompatActivity() {
 
         setupListeners()
 
-        val lista = listOf("Yakissoba Clássico Grande - 900g", "Mega X Burguer Double Trouble", "TESTE", "TESTE", "TESTE", "TESTE", "TESTE", "TESTE", "TESTE", "TESTE")
+        val listaConfirmation = mutableListOf(
+            ConfirmationDataClass(R.drawable.yakisoba_bowl,
+                "Yakisoba clássico grande - 900g",
+                "+R$ 68,90"),
+            ConfirmationDataClass(R.drawable.yakisoba_bowl,
+                "Yakisoba clássico pequeno - 510g",
+                "+R$ 49,90"),
+            ConfirmationDataClass(R.drawable.rolinho_kit_kat,
+                "Rolinho de Kit Kat - 2 unidades",
+                "+R$ 21,90"),
+            ConfirmationDataClass(R.drawable.rolinho_primavera,
+                "Rolinho primavera - 2 unidades",
+                "+R$ 15,90"),
+            ConfirmationDataClass(R.drawable.rolinho_banana,
+                "Rolinho banana com chocolate - 2 unidades",
+                "+R$ 16,00"),
+            ConfirmationDataClass(R.drawable.coca_cola,
+                "Coca-Cola 350ml",
+                "+R$ 7,90"),
+        )
 
-        confirmationAdapter = ConfirmationAdapter( lista )
+        confirmationAdapter = ConfirmationAdapter( listaConfirmation ) //tinha dado um erro aqui
         binding.rvListaConfirmation.adapter = confirmationAdapter
         binding.rvListaConfirmation.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
     }

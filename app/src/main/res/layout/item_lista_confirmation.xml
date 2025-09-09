@@ -12,7 +12,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="4dp"
         android:text="@string/txt_nome_item_produto"
-        android:textSize="14sp"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,7 +25,7 @@
         android:layout_marginTop="8dp"
         android:text="@string/txt_valor_item_opcionais"
         android:textColor="#616161"
-        android:textSize="12sp"
+        android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/image_confirmation_item"
         app:layout_constraintEnd_toEndOf="@+id/text_titulo_confirmation_item"
@@ -75,8 +75,8 @@
 
     <ImageView
         android:id="@+id/image_confirmation_item"
-        android:layout_width="80dp"
-        android:layout_height="60dp"
+        android:layout_width="96dp"
+        android:layout_height="72dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/arredondar_imagens_opcional"
